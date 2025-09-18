@@ -1,0 +1,13 @@
+.chord {
+  position: relative;
+  display: inline-block;
+}
+
+.chord::before {
+  content: attr(data-chord);
+  position: absolute;
+  top: -1em;
+  left: 0;
+  font-weight: bold;
+  color: #007bff;
+}
